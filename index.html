@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <title>Country Info</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h1>Country Information</h1>
+        
+        <div id="div_search">
+          <input id="search" type="search" placeholder="Enter country name...">
+          <button id="bt_search">Search</button>
+        </div>
+        
+        <div id="country-card" class="card-hidden">
+          <img id="flag" class="flag" alt="Country Flag">
+          <h2 id="name"></h2>
+          <p><strong>Capital: </strong><span id="capital"></span></p>
+          <p><strong>Population: </strong><span id="population"></span></p>
+          <p><strong>Region: </strong><span id="region"></span></p>
+          <p><strong>Subregion: </strong><span id="subregion"></span></p>
+        </div>
+      </div>
+
+      <div class="right">
+        <iframe id="map"></iframe>
+      </div>
+    </div>
+    <footer>@ 2026 hoangtunanggia</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
