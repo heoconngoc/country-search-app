@@ -14,16 +14,15 @@
 
       <div id="div_search">
         <input id="search" type="search" placeholder="Enter country name...">
+        <ul id="suggest-list" class="suggest hidden"></ul>
         <button id="bt_search">Search</button>
       </div>
 
-      <div id="country-card" class="card-hidden">
-        <img id="flag" class="flag" alt="Country Flag">
-        <h2 id="name"></h2>
-        <p><strong>Capital: </strong><span id="capital"></span></p>
-        <p><strong>Population: </strong><span id="population"></span></p>
-        <p><strong>Region: </strong><span id="region"></span></p>
-        <p><strong>Subregion: </strong><span id="subregion"></span></p>
+      <div id="country-card" class="card card-hidden"></div>
+      
+      <div id="history">
+        <h3>Search history</h3>
+        <ul id="history-list"></ul>
       </div>
     </div>
 
@@ -32,7 +31,7 @@
     </div>
   </div>
   <footer>
-    © 2026 hoangtunanggia 
+    © 2026 hoangtunanggia
   </footer>
 
   <script src="script.js"></script>
