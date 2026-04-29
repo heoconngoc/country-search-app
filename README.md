@@ -27,11 +27,13 @@ Data is sourced from the **REST Countries** API, and maps are displayed using **
 ---
 
 ## 📂 Directory Structure
+```
 country-search-app/
 │── index.html
 │── style.css
 │── script.js
 └── README.md
+```
 
 ---
 
@@ -47,7 +49,8 @@ git clone git@github.com:heoconngoc/country-search-app.git
 
 ---
 
-## 👨‍💻 Author **hoangtunanggia**  
+## 👨‍💻 Author 
+**hoangtunanggia**  
 GitHub: https://github.com/heoconngoc
 
 ---
