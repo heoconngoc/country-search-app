@@ -169,3 +169,28 @@ document.getElementById("bt_search").addEventListener("click", () => {
   getCountry(countryName);
   suggestList.classList.add("hidden");
 });
+
+const toggleButton = document.getElementById("toggle-theme");
+toggleButton.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+
+  const isDark = document.body.classList.contains("dark");
+  
+  if (isDark) {
+    toggleButton.textContent = "☀️";
+  } else {
+    toggleButton.textContent = "🌙";
+  }
+
+  localStorage.setItem("theme", isDark ? "dark" : "light");
+});
+
+function loadTheme() {
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark");
+  }
+}
+
+loadTheme();

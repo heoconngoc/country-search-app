@@ -46,6 +46,10 @@ git clone git@github.com:heoconngoc/country-search-app.git
 2. Open file: index.html
 
 3. Or run by Live Server in VS Code.
+```terminal
+npm install -g live-server
+live-server
+```
 
 ---
 
