@@ -10,10 +10,6 @@ function setLoading(value) {
 
   const card = document.getElementById("country-card");
   card.classList.remove("card-hidden");
-
-  if (value) {
-    card.innerHTML = `<p class="loading">Loading...</p>`;
-  }
 }
 
 async function getCountry(countryName) {
@@ -175,7 +171,7 @@ toggleButton.addEventListener("click", () => {
   document.body.classList.toggle("dark");
 
   const isDark = document.body.classList.contains("dark");
-  
+
   if (isDark) {
     toggleButton.textContent = "☀️";
   } else {
