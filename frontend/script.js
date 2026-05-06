@@ -39,6 +39,7 @@ async function getCountry(countryName) {
   }
 }
 
+
 function renderCountryList(list) {
   const card = document.getElementById("country-card");
   card.innerHTML = "";

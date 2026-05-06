@@ -5,13 +5,13 @@ async function getCountry() {
   // await: chờ API trả kết quả hẳn chứ không còn là Promise
   const response = await fetch(url);
 
-  console.log(response)
+  // console.log(response)
   console.log("======== Data ========")
 
   // API trả về raw data
   // .json() chuyển thành object Javascript 
   const data = await response.json();
-  console.log(data);
+  // console.log(data);
 
   const country = data[0];
 
